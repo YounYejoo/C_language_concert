@@ -1,0 +1,112 @@
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <string.h>
+//#include <math.h>
+//
+//typedef struct time { int hour, min, sec; } Time; //struct time 을 Time으로 바꿔서 사용.
+//
+//Time diff_time(Time start, Time end) {
+//	Time result;
+//	int sec1, sec2, diff;
+//
+//	sec1 = start.hour * 3600 + start.min * 60 + start.sec;
+//	sec2 = end.hour * 3600 + end.min * 60 + end.sec;
+//	diff = sec2 - sec1;
+//
+//	result.hour = diff / 3600;
+//	result.min = (diff % 3600) / 60;
+//	result.sec = diff % 60;
+//
+//	return result;
+//}
+//
+//int main() {
+//	Time start, end, diff;
+//
+//	printf("시작: ");
+//	scanf("%d %d %d", &start.hour, &start.min, &start.sec);
+//	printf("종료: ");
+//	scanf("%d %d %d", &end.hour, &end.min, &end.sec);
+//
+//	diff = diff_time(start, end);
+//
+//	printf("소요 시간: %d: %d :%d\n",diff.hour, diff.min, diff.sec);
+//}
+
+
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <string.h>
+//#include <math.h>
+//
+//struct mail {
+//	char sub[20], from[20], to[20], con[50];
+//	int date, lank;
+//};
+//
+//int main() {
+//	struct mail E1;
+//}
+//
+//int main() {
+//	struct mail num[5] = { { "김길동", "01011111111" }, { "이길동", "01022222222" }, {"박길동", "01033333333"},
+//		{"정길동", "01044444444"}, {"최길동", "01055555555"} };
+//	char man[30];
+//	int i, found = 0;
+//
+//	printf("이름: ");
+//	scanf("%s", man);
+//
+//	for (i = 0; i < 5; i++) {
+//		if (strcmp(man, num[i].name) == 0) {
+//			printf("%s\n", num[i].num);
+//			found = 1;
+//			break;
+//		}
+//	}
+//
+//	if (found == 0)
+//		printf("찾는 이름이 없음.");
+//}
+
+
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <string.h>
+//
+//struct employee {
+//	int number;
+//	char name[10];
+//	int age;
+//};
+//
+//int main() {
+//	struct employee emp[10] = { {1, "김길동", 10}, {2, "이길동", 20}, {3, "박길동", 30}, {4, "최길동", 40}, {5, "정길동", 25},
+//	{6, "유길동", 59 }, {7, "서길동", 24 }, { 8, "윤길동", 19 }, { 9, "강길동", 21 }, { 10, "홍길동", 29 } };
+//	int i;
+//
+//	for (i = 0; i < 10; i++) {
+//		if (emp[i].age >= 20 && emp[i].age <= 30)
+//			printf("%d %s\n", emp[i].number, emp[i].name);
+//	}
+//}
+
+
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//
+//struct complex {
+//	float x, y;
+//};
+//
+//int main() {
+//	struct complex a = { 0 };
+//	struct complex b = { 0 };
+//
+//	printf("첫번째 복소수: ");
+//	scanf("%lf, %lf", &a.x, &a.y);
+//	printf("두번째 복소수: ");
+//	scanf("%lf, %lf", &b.x, &b.y);
+//
+//	printf("%.1f + %.1fi\n", a.x + b.x, a.y + b.y);
+//}
