@@ -1,0 +1,51 @@
+////c언어 콘서트 챕터 12 파일 입출력. 프로그래밍 1.
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//
+//int main() {
+//	char name[10];
+//	int a, p;
+//	FILE* fp = fopen("employee.txt", "w");
+//	
+//	if (fp == NULL) {
+//		fprintf(stderr, "파일을 열 수 없습니다.\n");
+//		return 1;
+//	}
+//
+//	printf(fp, "직원 이름: ");
+//	scanf("%s", name);
+//	printf(fp, "나이: ");
+//	scanf("%d", &a);
+//	printf(fp, "월급: ");
+//	scanf("%d", &p);
+//
+//	fclose(fp);
+//}
+
+
+////2.
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//
+//int main() {
+//	int num[] = { 10, 20, 30 }, arr[100], count;
+//	float sum = 0, aver;
+//	FILE* fp = fopen("num.txt", "w");
+//
+//	fwrite(num, sizeof(int), 3, fp);
+//
+//	fclose(fp);
+//
+//	fp = fopen("num.txt", "r");
+//
+//	for (count = 0; count < 3; count++) {
+//		arr[count] = num[count];
+//		sum += arr[count];
+//	}
+//
+//	aver = sum / count;
+//
+//	printf("정수들의 개수: %d\n", count);
+//	printf("정수들의 합계: %.1f\n", sum);
+//	printf("정수들의 평균: %.1f\n", aver);
+//}
