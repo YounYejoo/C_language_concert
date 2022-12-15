@@ -1,0 +1,203 @@
+////5번
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//	char str[100];
+//	int i;
+//
+//	printf("텍스트 입력: ");
+//	gets_s(str, 99);
+//
+//	for (i = 0; i < strlen(str); i++) {
+//		if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || 
+//			str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U') {
+//			i++;
+//			continue;
+//		}
+//		printf("%c", str[i]);
+//		i++;
+//	}
+//}
+
+
+////6번
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//	char str[100];
+//	int i;
+//
+//	printf("텍스트 입력: ");
+//	gets_s(str, 99);
+//
+//	for (i = 0; i < strlen(str); i++) {
+//		str[i] = toupper(str[i]);
+//	}
+//
+//	printf("대문자 출력: %s\n", str);\
+//}
+
+
+////7번
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//	char str[100], tmp;
+//	int i, len;
+//
+//	printf("문자열: ");
+//	gets_s(str, 79);
+//
+//	len = strlen(str);
+//	
+//	for (i = 0; i < len / 2; i++) {
+//		tmp = str[i];
+//		str[i] = str[len - i - 1];
+//		str[len - i - 1] = tmp;
+//	}
+// 
+//	printf("%s", str);
+//}
+
+
+////8번
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//	char str[100];
+//	int i = 0;
+//
+//	printf("문자열: ");
+//	gets_s(str, 99);
+//
+//	while (str[i] != 0) {
+//		if ('A' <= str[i] && str[i] <= 'Z')
+//			str[i]	= str[i] - 'A' + 'a';
+//		i++;
+//	}
+//
+//	printf("%s\n", str);
+//}
+
+
+////9번
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//	char str[100];
+//	int len, i, count = 0;
+//
+//	printf("문자열: ");
+//	gets_s(str, 99);
+//
+//	len = strlen(str);
+//
+//	for (i = 0; i < len; i++) {
+//		if (str[i] == ' ') 
+//			count++;
+//	}
+//
+//	printf("단어의 개수: %d", count + 1);
+//}
+
+
+////10번
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//	char str[100];
+//	int i, yes = 0;
+//
+//	printf("문자열: ");
+//	gets_s(str, 99);
+//
+//	for (i = 0; i < strlen(str); i++) {
+//		if (str[i] != str[strlen(str) - i - 1])
+//			yes = 1;
+//		else
+//			yes = 0;
+//	}
+//
+//	if (yes == 0)
+//		printf("회문입니다.");
+//	else
+//		printf("회문이 아닙니다.");
+//}
+
+
+////11번
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//	char a;
+//
+//	printf("문자 입력: ");
+//	scanf("%c", &a);
+//
+//	printf("%c의 아스키코드: %d\n", a, a);
+//}
+
+
+////13번
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//	char str[100];
+//	int i = 0, count[128] = { 0 };
+//
+//
+//	printf("문자열 입력: ");
+//	gets_s(str, 99);
+//
+//	for (i = 0; i < strlen(str); i++) {
+//		count[str[i]]++;
+//	}
+//
+//	for (i = 0; i < strlen(str); i++) {
+//		if (count[str[i]] != 0) {
+//			printf("%c 문자 %d번\n", str[i], count[str[i]]);
+//			count[str[i]] = 0;
+//		}
+//	}
+//}
+
+
+////14번
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//	char str[100];
+//	int len;
+//
+//	printf("문자열: ");
+//	gets_s(str, 99);
+//
+//	if ('a' < str[0] && str[0] < 'z')
+//		str[0] = toupper(str[0]);
+//
+//	len = strlen(str);
+//
+//	if (str[len - 1] != '.') {
+//		str[len] = '.';
+//		str[len + 1] = '\0';
+//	}
+//
+//	printf("결과: %s\n", str);
+//}
